@@ -11,11 +11,15 @@ import Foundation
 struct Story {
     let story: String
     let choice1: String
+    let choice1Destination: Int
     let choice2: String
+    let choice2Destination: Int
     
-    init(s: String, c1: String, c2: String) {
+    init(s: String, c1: String, cd1: Int, c2: String, cd2: Int) {
         story = s
         choice1 = c1
         choice2 = c2
+        choice1Destination = cd1
+        choice2Destination = cd2
     }
 }
